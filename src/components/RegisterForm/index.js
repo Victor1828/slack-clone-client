@@ -61,11 +61,13 @@ const RegisterForm = () => {
   }
 
   return (
-    <Container>
+    <Container style={{ marginTop: '20px' }}>
       <Header as="h2">Register</Header>
       <Form onSubmit={handleSubmit}>
         <Field
           control={Input}
+          icon="user"
+          iconPosition="left"
           label="Username"
           placeholder="Username"
           onChange={handleChange}
@@ -75,6 +77,8 @@ const RegisterForm = () => {
         />
         <Field
           control={Input}
+          icon="mail"
+          iconPosition="left"
           label="Email"
           placeholder="Email"
           onChange={handleChange}
@@ -84,6 +88,8 @@ const RegisterForm = () => {
         />
         <Field
           control={Input}
+          icon="lock"
+          iconPosition="left"
           type="password"
           label="Password"
           placeholder="Password"
