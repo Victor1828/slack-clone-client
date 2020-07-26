@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form, Container, Header, Input } from 'semantic-ui-react'
-import { gql } from 'apollo-boost'
-import { useMutation } from '@apollo/react-hooks'
+import { gql, useMutation } from '@apollo/client'
 import { useHistory } from 'react-router-dom'
 
 const { Field } = Form
